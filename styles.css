@@ -1,0 +1,274 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+main {
+    display: block;
+}
+
+div {
+    display: block;
+}
+
+header {
+    display: flex;
+    background-color: #22211f;
+    align-items: center;
+    justify-content: space-around; /* space-between;*/
+    color:white;
+    padding: 12px;
+    position: fixed;
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    gap: 3em;
+    font-size: 15px;
+}
+
+header a i {
+    color: blanchedalmond;
+    font-size: 1.2em;
+}
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+section {
+    display: block;
+}
+
+.seccion-1 {
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+    gap: 3em;
+}
+
+.seccion-2, .seccion-3 {
+    background-color: #eeeeee;
+    /*display: grid;*/
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+    gap: 1em;
+}
+
+p {
+    text-align: justify;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    height: 250px;
+    width: 250px;
+}
+
+footer {
+    display: flex;
+    background-color: #22211f;
+    align-items: flex-start
+    justify-content: space-around; /* space-between;*/
+    color:white;
+    padding: 12px;
+}
+
+#footer {
+    padding: 1em;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer nav ul {
+    display: flex;
+    gap: 3em;
+    font-size: 15px;
+}
+
+/* ------------- Formulario ------------- */
+  
+.formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+  }
+
+/* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .form-row input[type="text"],
+  .form-row input[type="email"] {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  
+  .form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+  }
+
+  .form-row textarea {
+    /*font-family: "Helvetica", "Arial", sans-serif;*/
+    font-size: 14px;
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+    width: 100%;
+  }
+
+  .form-row button {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #5995da;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 40px;
+    cursor: pointer;
+  }
+  
+  .form-row button:hover {
+    background-color: #76aeed;
+  }
+  
+  .form-row button:active {
+    background-color: #407fc7;
+  }
+  
+
+  
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .seccion-1 {
+        flex-wrap: wrap;
+    }
+    .checkbtn {
+        display: block;
+    }
+    #encabezado ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: grey;
+        text-align: center;
+        top: 90px;
+        left: 100%;
+        transition: all 0.5s;
+    }
+    #check:checked ~ ul {
+        left: 0;
+        display: block;
+    }
+    #encabezado nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    #encabezado nav ul li a {
+        font-size: 20px;
+    }
+    #check:checked ~ .checkbtn {
+        background-color: grey;
+    }
+}
+
+/* Estilos para pantallas más grandes (a partir de 769px) */
+@media (min-width: 769px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más
+    grandes */
+    body {
+        font-size: 18px;
+    }
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* ------------- Para Pantallas de más de 700px ------------- */
+/*@media only screen and (min-width: 700px) {*/
+    .form-header {
+      padding: 50px;
+    }
+  
+    .form-row {
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .form-row input[type="text"],
+    .form-row input[type="email"]  {
+      width: 250px;
+      height: initial;
+    }
+    .form-row label {
+      text-align: right;
+      width: 120px;
+      margin-top: 7px;
+      padding-right: 20px;
+    }
+    .form-row textarea {
+        width: 250px;
+    }
+
+    .form-row button {
+        margin-left: 120px;
+    }  
+    
+  /*}*/
+
+}

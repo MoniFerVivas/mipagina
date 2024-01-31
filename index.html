@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monica Vivas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/870da14a4e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="conteiner">
+
+        <header id="encabezado">
+            <p>Mónica Vivas</p>
+            <a href="index.html"><i class="fa-solid fa-circle-info"></i></a>
+            <nav>
+                <input type="checkbox" id="check" />
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#extracto">Extracto</a></li>
+                    <li><a href="#experiencia">Experiencia</a></li>
+                    <li><a href="#educacion">Educación</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#cv">CV</a></li>
+                </ul>
+            </nav>
+        </header>
+            
+        <main id="seccion-principal">
+            
+            <section class="seccion-1">
+                <div class="extracto">
+                    <br><h2>Extracto</h2>
+                    <p class="parrafo1">Con más de 14 años de experiencia en logística, me destaco por mi gestión eficiente en roles clave. Mi experiencia incluye el control de flotas, gestión documental, coordinación logística, y supervisión de operaciones. He liderado equipos, optimizado procesos y mejorado la eficiencia en distribución. Mi formación académica incluye un título de Tercer Nivel en Ingeniería Industrial en Procesos de Automatización y una formación en Programación Web Full Stack. Estos conocimientos técnicos, combinados con mi experiencia operativa, me posicionan como un profesional versátil capaz de abordar desafíos logísticos desde una perspectiva integral. Como miembro vocal del Directorio de la Corporación de Empresas e Instituciones del Parque Industrial Ambato, también he demostrado mi compromiso con el liderazgo y la colaboración en la comunidad empresarial. Destaco mi competencia bilingüe en español e inglés y mi enfoque proactivo para abordar proyectos, como se evidencia en mi participación en evaluaciones de proyectos innovadores en la Universidad Técnica de Ambato. Estoy emocionada por la oportunidad de aplicar mi experiencia y habilidades, contribuyendo al éxito continuo en el campo de la logística y la tecnología.</p>
+                </div>
+                <div class="acerca-imagen">
+                    <img src="img/Cartoon-removebg-preview.png" alt="Caricatura personal">
+                </div>
+            </section>
+            
+            <section class="seccion-2">
+                <h2>Experiencia</h2>
+
+                    <div>
+                        <h3>Coordinadora Logística en Servicios Logísticos Narváez S.C.C.</h3>
+                        <p> Nov 2017 - Dic 2020 <br>
+                            Creación, desarrollo y manejo de procesos en Bodega y Distribución en la Zona Centro del país. Gestión y control de inventarios vía sistema y tomas físicas. Manejo del área de Caja y Ventas. Control y manejo de operadores logísticos. Gestión de indicadores. Manejo y organización del recurso humano. Administración del Centro de Distribución.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>Coordinadora Logística CD Ambato en Industrias Ales C.A.</h3>
+                        <p> Nov 2016 - Nov 2017 <br>
+                            Manejo de procesos en Bodega y Distribución en la Zona Centro del país. Gestión y control de inventarios vía sistema y tomas físicas. Control y manejo de operadores logísticos. Gestión de indicadores. Manejo y organización del recurso humano. 
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>Administración Sucursal en Narváez Vaca Cía. Ltda.</h3>
+                        <p> Ago 2009 - Oct 2016 <br>
+                            Administración de la operación logística de productos de consumo masivo (Industrias Ales C.A.) de la zona centro del país. Manejo de Personal. Manejo y control de inventarios. Administración de sucursal centro. Manejo y control de presupuesto. Facturación transporte. 
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>Asistente Administrativa en Plasticaucho Industrial S.A.</h3>
+                        <p> Jun 2007 - Jul 2009 <br>
+                            Apoyo al Jefe de Planta en el manejo administrativo de la producción y recurso humano. Manejo y control de documentación ISO. Responsable de auditorías internas y externas del área.
+                        </p>
+                    </div>
+                    
+            </section>
+
+            <section class="seccion-3">
+                <h2>Contactame</h2>
+                <form action="" method="get" class="formulario" id="form">
+                    <div class="form-row">
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" name="nombre" type="text"/>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="correo@mail.com" required/>
+                    </div>
+                    <div class="form-row">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <button type="submit" id="submit">Enviar</button>
+                    </div>
+                    <p class="alertas" id="alertas"></p>
+                </form>
+            </section>
+
+        </main>
+
+        <footer id="contacto">
+            <div id="footer">
+                <nav>
+                    <ul>
+                        <li> <a href="https://www.linkedin.com/in/monicavivasnavas/"><i class="fa-brands fa-linkedin"></i></a> LinkedIn </li>
+                        <li> <a href="https://api.whatsapp.com/send?phone=593995036184&text=Hola..."><i class="fa-brands fa-whatsapp"></i></a> WhatsApp </li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
